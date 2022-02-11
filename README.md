@@ -1,2 +1,2 @@
-# typechain
-Learning Typescript by making a Blockchain with it
+# Blockchain
+Learning Blockchain for marginfarm project.
