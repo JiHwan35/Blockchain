@@ -1,2 +1,2 @@
 # Blockchain
-Learning Blockchain for marginfarm project.
+Construct Blockchain for marginfarm project.
