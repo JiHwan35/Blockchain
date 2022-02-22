@@ -7,7 +7,7 @@ from uuid import uuid4
 
 item = Blockchain()
 
-def mine():
+def mine(index,transaction): 
 
     last_block = item.last_block
     last_proof = last_block['proof']
