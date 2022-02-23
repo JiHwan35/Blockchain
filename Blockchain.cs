@@ -54,7 +54,6 @@ namespace BlockchainTest.Class
         {
             this.previousBlockHash = previousBlockHash;
             this.merkleRootHash = transactions.GetHashCode();
-           
         }
     
         private byte[] previousBlockHash;

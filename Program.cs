@@ -10,12 +10,12 @@ namespace BlockchainTest
     {
         List<Block> blockchain = new List<Block>();
         static string savetran = "";
-        static string savehash = "";
+        //static string genesishash = "";
+        static string newblockhash = "";
 
         static void Main(string[] args)
         {
             int k = 5;
-    
             string transactions = "Jihwan";
             
             //GenesisBlock create
@@ -24,32 +24,30 @@ namespace BlockchainTest
             Console.WriteLine("Genesis Block Hash : {0} ", genesisBlock.getBlockHash());
 
             //hash save
-            savehash = genesisBlock.getBlockHash();
+            genesishash = genesisBlock.getBlockHash();
             
             //New Block mining
             Block previousBlock = genesisBlock;
             for(int i = 0; i< k; i++)
             {
-                previousBlock = miner(previousBlock,transactions,i+1);
+                previousBlock = miner(transactions,i+1);
             }
-            
-            //newblock save
-            savehash = previousBlock.getBlockHash();
-            savetran = previousBlock.getBlocktransaction();
-            Console.WriteLine(savehash);
-            Console.WriteLine(savetran);
+        
         }
 
-        static Block miner(Block previousBlock, string transactions,int index){
+        static Block miner(string transactions,int index){
             
-            BlockHeader secondBlockheader = new BlockHeader(Encoding.UTF8.GetBytes(previousBlock.getBlockHash()), transactions);
+            BlockHeader secondBlockheader = new BlockHeader(Encoding.UTF8.GetBytes(newblockhash), transactions);
             Block nextBlock = new Block(secondBlockheader, transactions);
         
             int count = secondBlockheader.ProofOfWorkCount();
 
             Console.WriteLine("The {0}th new Block has been mined \nNew Block Hash : {1} ", index.ToString(), nextBlock.getBlockHash());
             Console.WriteLine(transactions);
-            previousBlock = nextBlock;
+            Block previousBlock = nextBlock;
+
+            newblockhash = previousBlock.getBlockHash();
+            savetran = previousBlock.getBlocktransaction();
 
             return previousBlock;    
         }
