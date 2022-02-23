@@ -6,7 +6,7 @@ namespace BlockchainTest.Class
 {
     public class Block
     {
-        public Block(BlockHeader blockHeader, Object[] transactions)
+        public Block(BlockHeader blockHeader, Object transactions)
         {
             this.blockHeader = blockHeader;
             this.transactions = transactions;
@@ -15,7 +15,7 @@ namespace BlockchainTest.Class
         private int blockSize;
         private BlockHeader blockHeader;
         private int transactionCount;
-        private object[] transactions;
+        private object transactions;
 
      
         public string getBlockHash()
@@ -31,7 +31,12 @@ namespace BlockchainTest.Class
             }
         }
             
-       
+       public string getBlocktransaction()
+       {
+           object tran = transactions;
+
+           return tran.ToString();
+       }
         public static string ByteArrayToString(byte[] bts)
         {
             StringBuilder strBld = new StringBuilder();
@@ -45,10 +50,11 @@ namespace BlockchainTest.Class
 
     public class BlockHeader
     {
-        public BlockHeader(byte[] previousBlockHash, object[] transactions)
+        public BlockHeader(byte[] previousBlockHash, object transactions)
         {
             this.previousBlockHash = previousBlockHash;
             this.merkleRootHash = transactions.GetHashCode();
+           
         }
     
         private byte[] previousBlockHash;
@@ -56,8 +62,7 @@ namespace BlockchainTest.Class
         private int timestamp;
         private static uint difficultyTarget = 5;
         private static int nonce = 0;
-
-
+        
         
         public int ProofOfWorkCount()
         {
