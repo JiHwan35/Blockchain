@@ -1,0 +1,15 @@
+C:\Users\rty77\OneDrive\바탕 화면\JJHDGU\Blockchain\bin\Debug\net6.0\Blockchain.exe
+C:\Users\rty77\OneDrive\바탕 화면\JJHDGU\Blockchain\bin\Debug\net6.0\Blockchain.deps.json
+C:\Users\rty77\OneDrive\바탕 화면\JJHDGU\Blockchain\bin\Debug\net6.0\Blockchain.runtimeconfig.json
+C:\Users\rty77\OneDrive\바탕 화면\JJHDGU\Blockchain\bin\Debug\net6.0\Blockchain.dll
+C:\Users\rty77\OneDrive\바탕 화면\JJHDGU\Blockchain\bin\Debug\net6.0\Blockchain.pdb
+C:\Users\rty77\OneDrive\바탕 화면\JJHDGU\Blockchain\obj\Debug\net6.0\Blockchain.csproj.AssemblyReference.cache
+C:\Users\rty77\OneDrive\바탕 화면\JJHDGU\Blockchain\obj\Debug\net6.0\Blockchain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rty77\OneDrive\바탕 화면\JJHDGU\Blockchain\obj\Debug\net6.0\Blockchain.AssemblyInfoInputs.cache
+C:\Users\rty77\OneDrive\바탕 화면\JJHDGU\Blockchain\obj\Debug\net6.0\Blockchain.AssemblyInfo.cs
+C:\Users\rty77\OneDrive\바탕 화면\JJHDGU\Blockchain\obj\Debug\net6.0\Blockchain.csproj.CoreCompileInputs.cache
+C:\Users\rty77\OneDrive\바탕 화면\JJHDGU\Blockchain\obj\Debug\net6.0\Blockchain.dll
+C:\Users\rty77\OneDrive\바탕 화면\JJHDGU\Blockchain\obj\Debug\net6.0\refint\Blockchain.dll
+C:\Users\rty77\OneDrive\바탕 화면\JJHDGU\Blockchain\obj\Debug\net6.0\Blockchain.pdb
+C:\Users\rty77\OneDrive\바탕 화면\JJHDGU\Blockchain\obj\Debug\net6.0\Blockchain.genruntimeconfig.cache
+C:\Users\rty77\OneDrive\바탕 화면\JJHDGU\Blockchain\obj\Debug\net6.0\ref\Blockchain.dll
